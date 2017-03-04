@@ -19,7 +19,7 @@ public class tab2gallery extends Fragment {
                              Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.tab2gallery, container, false);
 
-        return rootView;
+        return rootView; //test
     }
 
 }
