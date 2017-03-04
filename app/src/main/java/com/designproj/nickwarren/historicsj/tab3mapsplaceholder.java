@@ -28,7 +28,7 @@ public class tab3mapsplaceholder extends Fragment implements OnMapReadyCallback 
 
     public static tab3mapsplaceholder newInstance() {
         tab3mapsplaceholder fragment = new tab3mapsplaceholder();
-        return fragment; //
+        return fragment; 
     }
 
     @Nullable
