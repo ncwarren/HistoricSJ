@@ -44,8 +44,6 @@ public class tab1learnmore extends Fragment {
             int id = infoDB.getResourceId(i,0);
             if (id > 0){
                 infoDB_stringified[i] = res.getStringArray(id);
-            } else{
-
             }
         }
         infoDB.recycle();
