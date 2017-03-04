@@ -4,18 +4,23 @@ package com.designproj.nickwarren.historicsj;
  * Created by nickwarren on 2017-03-02.
  */
 
+import android.app.Activity;
 import android.content.res.Resources;
 import android.content.res.TypedArray;
 import android.content.res.XmlResourceParser;
 import android.media.Image;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Xml;
 import android.view.LayoutInflater;
 import android.support.v4.app.Fragment;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
+
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.NodeList;
@@ -24,6 +29,8 @@ import java.io.*;
 
 
 public class tab1learnmore extends Fragment {
+
+
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -58,12 +65,4 @@ public class tab1learnmore extends Fragment {
         return myInflatedView;
     }
 
-
-
-
-    public void setText(String text){
-        TextView Caption = (TextView) getActivity().findViewById(R.id.caption); //getView() is v importmant as findViewByID is provided in Activity class, not Fragment class
-        //ImageView Viewer = (ImageView) getView().findViewById(R.id);
-        Caption.setText("sample caption");
-    }
 }
