@@ -8,7 +8,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.google.android.gms.maps.MapView;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.MapsInitializer;
@@ -24,6 +23,7 @@ import com.google.android.gms.maps.model.MarkerOptions;
 public class tab3mapsplaceholder extends Fragment implements OnMapReadyCallback {
     private View rootView;
     private SupportMapFragment mapFragment = new SupportMapFragment();
+    String TAG = "Log";
 
 
     @Override
@@ -37,11 +37,16 @@ public class tab3mapsplaceholder extends Fragment implements OnMapReadyCallback 
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        try {
             rootView = inflater.inflate(R.layout.fragment_gmaps, null, false);
 
             mapFragment = (SupportMapFragment) this.getChildFragmentManager().findFragmentById(R.id.map);
             mapFragment.onCreate(savedInstanceState);
             mapFragment.getMapAsync(this);
+        }
+        catch(InflateException e){
+            Log.e(TAG, "Inflate exception");
+        }
         return rootView;
     }
 
