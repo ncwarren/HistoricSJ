@@ -1,16 +1,17 @@
 package com.designproj.nickwarren.historicsj;
 
 import android.os.Bundle;
-import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
+import android.util.Log;
+import android.view.InflateException;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.google.android.gms.maps.MapView;
 import com.google.android.gms.maps.CameraUpdateFactory;
-import com.google.android.gms.maps.MapFragment;
 import com.google.android.gms.maps.GoogleMap;
+import com.google.android.gms.maps.MapsInitializer;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
@@ -21,27 +22,62 @@ import com.google.android.gms.maps.model.MarkerOptions;
  */
 
 public class tab3mapsplaceholder extends Fragment implements OnMapReadyCallback {
+    private View rootView;
+    private SupportMapFragment mapFragment = new SupportMapFragment();
 
 
-
-    private GoogleMap mMap;
-
-    public static tab3mapsplaceholder newInstance() {
-        tab3mapsplaceholder fragment = new tab3mapsplaceholder();
-        return fragment; 
+    @Override
+    public void onDetach() {
+        super.onDetach();
     }
 
-    @Nullable
+    @Override
+    public void onCreate(Bundle savedInstanceState) { super.onCreate(savedInstanceState);
+    }
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_gmaps, null, false);
+            rootView = inflater.inflate(R.layout.fragment_gmaps, null, false);
 
-        SupportMapFragment mapFragment = (SupportMapFragment) this.getChildFragmentManager()
-                .findFragmentById(R.id.map);
-        mapFragment.getMapAsync(this);
-
-        return view;
+            mapFragment = (SupportMapFragment) this.getChildFragmentManager().findFragmentById(R.id.map);
+            mapFragment.onCreate(savedInstanceState);
+            mapFragment.getMapAsync(this);
+        return rootView;
     }
+
+    @Override
+    public void onPause() {
+        super.onPause();
+        mapFragment.onPause();
+    }
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+        mapFragment.onDestroy();
+    }
+
+    @Override
+    public void onSaveInstanceState(Bundle outState)
+    {
+        super.onSaveInstanceState(outState); mapFragment.onSaveInstanceState(outState);
+    }
+    @Override
+    public void onLowMemory()
+    {
+        super.onLowMemory();
+        mapFragment.onLowMemory();
+    }
+    @Override
+    public void onResume() {
+        super.onResume();
+        mapFragment.onResume();
+    }
+    @Override
+    public void onDestroyView() {
+        super.onDestroyView();
+    }
+
+
 
     @Override
     public void onMapReady(GoogleMap googleMap) {
