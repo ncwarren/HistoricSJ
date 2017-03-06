@@ -10,7 +10,6 @@ import android.view.ViewGroup;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
-import com.google.android.gms.maps.MapsInitializer;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
@@ -64,7 +63,8 @@ public class tab3mapsplaceholder extends Fragment implements OnMapReadyCallback 
     @Override
     public void onSaveInstanceState(Bundle outState)
     {
-        super.onSaveInstanceState(outState); mapFragment.onSaveInstanceState(outState);
+        super.onSaveInstanceState(outState);
+        mapFragment.onSaveInstanceState(outState);
     }
     @Override
     public void onLowMemory()
@@ -81,8 +81,6 @@ public class tab3mapsplaceholder extends Fragment implements OnMapReadyCallback 
     public void onDestroyView() {
         super.onDestroyView();
     }
-
-
 
     @Override
     public void onMapReady(GoogleMap googleMap) {

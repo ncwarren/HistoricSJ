@@ -174,7 +174,7 @@ public class MainActivity extends AppCompatActivity {
                 case 1:
                     return "GALLERY";
                 case 2:
-                    return "BROWSE";
+                    return "MAP";
             }
             return null;
         }
