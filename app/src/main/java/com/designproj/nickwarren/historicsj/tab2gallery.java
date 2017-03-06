@@ -24,6 +24,10 @@ import android.widget.ListView;
 import android.widget.SimpleAdapter;
 import android.widget.Toast;
 
+import org.greenrobot.eventbus.EventBus;
+import org.greenrobot.eventbus.Subscribe;
+import org.greenrobot.eventbus.ThreadMode;
+
 import java.util.ArrayList;
 
 /**
@@ -32,45 +36,25 @@ import java.util.ArrayList;
  * Recycler view: http://www.androidauthority.com/how-to-build-an-image-gallery-app-718976/
  */
 
-public class tab2gallery extends Fragment implements AdapterView.OnClickListener{
-    OnPhotoSelectedListener mCallback;
-    Activity activity;
-    //ListView list;
-
-
+public class tab2gallery extends Fragment //implements MyAdapter.AdapterCallback
+ {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        //setContentView(R.layout.activity_main);
-
-        //this.setListAdapter(new ArrayAdapter<String>(
-        //        this, R.layout.mylist,
-         //       R.id.Itemname,itemname));
-
     }
 
-    @Override
-    public void onClick(View v) {
-        Toast.makeText(getActivity(), "Item", Toast.LENGTH_LONG).show();
-    }
 
-    public interface OnPhotoSelectedListener{
-        public void onPhotoSelected(int position);
-    }
+     // This method will be called when a com.designproj.nickwarren.historicsj.MessageEvent is posted (in the UI thread for Toast)
+     @Subscribe(threadMode = ThreadMode.MAIN)
+     public void onMessageEvent(PhotoObject event) {
+         Toast.makeText(getActivity(), "Button pressed!", Toast.LENGTH_SHORT).show();
+     }
 
-    public void OnAttach(AppCompatActivity activity){
-        super.onAttach(activity);
-        this.activity = activity;
-
-        try{
-            mCallback = (OnPhotoSelectedListener) activity;
-
-        } catch (ClassCastException e){
-            throw new ClassCastException(activity.toString()
-                    + " must implement OnPhotoSlectedListener");
-        }
-    }
-
+     @Override
+     public void onStart() {
+         super.onStart();
+         EventBus.getDefault().register(this);
+     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -86,45 +70,14 @@ public class tab2gallery extends Fragment implements AdapterView.OnClickListener
         MyAdapter adapter = new MyAdapter(getContext(), createLists);
         recyclerView.setAdapter(adapter);
 
-        //String[][] infoDB = GetlistContact();
-        //ListView lv = (ListView)rootView.findViewById(R.id.list);
-        //lv.setAdapter(new ListViewGalleryAdapter(getActivity(), infoDB));
-
     return rootView;
-    }
-
-
-    private String[][] GetlistContact(){
-
-        Resources res = getResources();
-        TypedArray infoDB = res.obtainTypedArray(R.array.historic_photo_info); //http://stackoverflow.com/questions/4326037/android-resource-array-of-arrays
-        int numberOfPhotos = infoDB.length();
-        String[][] infoDB_stringified = new String[numberOfPhotos][];
-        for(int i = 0; i<numberOfPhotos; i++){
-            int id = infoDB.getResourceId(i,0);
-            if (id > 0){
-                infoDB_stringified[i] = res.getStringArray(id);
-            }
-        }
-        infoDB.recycle();
-
-        return infoDB_stringified;
     }
 
 
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-        //ArrayAdapter appter = ArrayAdapter.createFromResource(getActivity(), R.array.photo2696, android.R.layout.simple_list_item_1);
-        //setListAdapter(appter);
-        //getListView().setOnItemClickListener(this);
 
-        //list = (ListView) findViewById(R.id.list);
-    }
-
-    //@Override
-    public void onItemClick(AdapterView<?> adapterView, View view, int i, long l){
-        Toast.makeText(getActivity(), "Item" + i, Toast.LENGTH_LONG).show();
     }
 
     private ArrayList<CreateList> prepareData(){

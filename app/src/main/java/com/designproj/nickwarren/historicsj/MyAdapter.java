@@ -7,6 +7,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import org.greenrobot.eventbus.EventBus;
 
 import java.util.ArrayList;
 
@@ -16,6 +19,7 @@ import java.util.ArrayList;
 public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
     private ArrayList<CreateList> galleryList;
     private Context context;
+
 
     public MyAdapter(Context context, ArrayList<CreateList> galleryList) {
         this.galleryList = galleryList;
@@ -33,6 +37,14 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
         viewHolder.title.setText(galleryList.get(i).getImage_title());
         viewHolder.img.setScaleType(ImageView.ScaleType.CENTER_CROP);
         viewHolder.img.setImageResource((galleryList.get(i).getImage_ID()));
+
+        viewHolder.img.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                EventBus.getDefault().post(new PhotoObject("testimage", "photo caption", "1892", "MUN", 0, 0));
+            }
+        });
     }
 
     @Override
@@ -48,6 +60,8 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
 
             title = (TextView)view.findViewById(R.id.title);
             img = (ImageView) view.findViewById(R.id.img);
+
+
         }
     }
 }

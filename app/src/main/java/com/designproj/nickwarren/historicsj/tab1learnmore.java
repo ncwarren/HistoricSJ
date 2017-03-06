@@ -21,6 +21,9 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import org.greenrobot.eventbus.EventBus;
+import org.greenrobot.eventbus.Subscribe;
+import org.greenrobot.eventbus.ThreadMode;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.NodeList;
@@ -30,7 +33,8 @@ import java.io.*;
 
 public class tab1learnmore extends Fragment {
 
-
+    TextView t;
+    ImageView im;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -40,7 +44,7 @@ public class tab1learnmore extends Fragment {
         View myInflatedView = inflater.inflate(R.layout.tab1learnmore, container,false);
 
         // Set the Text to try this out
-        TextView t = (TextView) myInflatedView.findViewById(R.id.caption);
+        this.t = (TextView) myInflatedView.findViewById(R.id.caption);
 
         Resources res = getResources();
 
@@ -57,12 +61,23 @@ public class tab1learnmore extends Fragment {
 
         t.setText(infoDB_stringified[0][1]);
 
-        ImageView im = (ImageView) myInflatedView.findViewById(R.id.imageView);
-        im.setImageResource(R.drawable.testimage);
-
-
+        this.im = (ImageView) myInflatedView.findViewById(R.id.imageView);
+        this.im.setImageResource(R.drawable.testimage);
 
         return myInflatedView;
+    }
+
+
+    // This method will be called when a com.designproj.nickwarren.historicsj.MessageEvent is posted (in the UI thread for Toast)
+    @Subscribe(threadMode = ThreadMode.MAIN)
+    public void onMessageEvent(PhotoObject event) {
+        t.setText(event.caption);
+    }
+
+    @Override
+    public void onStart() {
+        super.onStart();
+        EventBus.getDefault().register(this);
     }
 
 }

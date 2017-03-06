@@ -16,6 +16,10 @@ import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
+import org.greenrobot.eventbus.EventBus;
+import org.greenrobot.eventbus.Subscribe;
+import org.greenrobot.eventbus.ThreadMode;
+
 /**
  * Created by nickwarren on 2017-03-02.
  */
@@ -49,4 +53,18 @@ public class tab3mapsplaceholder extends Fragment implements OnMapReadyCallback 
         googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(marker, 13));        //center camera to marker
         googleMap.addMarker(new MarkerOptions().title("Location").position(marker));        //add pin and location name
     }
+
+    // This method will be called when a com.designproj.nickwarren.historicsj.MessageEvent is posted (in the UI thread for Toast)
+    @Subscribe(threadMode = ThreadMode.MAIN)
+    public void onMessageEvent(PhotoObject event) {
+        LatLng marker = new LatLng(48.7, -52.8);
+    }
+
+    @Override
+    public void onStart() {
+        super.onStart();
+        EventBus.getDefault().register(this);
+    }
+
 }
+

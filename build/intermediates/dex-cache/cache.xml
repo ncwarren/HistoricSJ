@@ -3,105 +3,6 @@
 
     <item
         is-multidex="true"
-        jar="/Users/nickwarren/AndroidStudioProjects/HistoricSJ/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/25.1.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="c9649557905bf7a80fca9e0d54cbcb7662627860">
-        <dex dex="/Users/nickwarren/AndroidStudioProjects/HistoricSJ/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-recyclerview-v7-25.1.1_080863471273973f9496103836a9d58618958aa1/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/nickwarren/AndroidStudioProjects/HistoricSJ/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="ecb496cc08dd52551fc5ec6db3bc0632e95a89bb">
-        <dex dex="/Users/nickwarren/AndroidStudioProjects/HistoricSJ/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-25.1.1_f41e6649ea42d3d1bbee31f0ac6aa348415330b3/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/nickwarren/AndroidStudioProjects/HistoricSJ/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.1.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="0fb891e8f0cfba0513043a7bb357513d229ca2cd">
-        <dex dex="/Users/nickwarren/AndroidStudioProjects/HistoricSJ/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-utils-25.1.1_55787c238ab7166767bdccd438f53f8900d5db86/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/nickwarren/AndroidStudioProjects/HistoricSJ/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/9.8.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="04bbbddf868aa02dd33f9e90d8f5d908c360f638">
-        <dex dex="/Users/nickwarren/AndroidStudioProjects/HistoricSJ/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-location-9.8.0_8c2aa7ee4190d206e9c3a10c67224ae1828aa213/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/nickwarren/AndroidStudioProjects/HistoricSJ/app/build/intermediates/exploded-aar/com.google.firebase/firebase-common/9.8.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="c61641e333fa88da21758bab8cc28ee16604b05f">
-        <dex dex="/Users/nickwarren/AndroidStudioProjects/HistoricSJ/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-common-9.8.0_eb7bb56cb39bf20f22df82f7e04d2d90c0559193/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/nickwarren/AndroidStudioProjects/HistoricSJ/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.1.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="0d191c1a09e4892d059e5ce749e4ad4e08129e35">
-        <dex dex="/Users/nickwarren/AndroidStudioProjects/HistoricSJ/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-25.1.1_e29cae0e28b6e8de870f99c40bcb202b19283b6b/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/nickwarren/AndroidStudioProjects/HistoricSJ/app/build/intermediates/exploded-aar/com.android.support/design/25.1.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="cd7951e04cfb9a8bf008d544a478d9a8d8192d38">
-        <dex dex="/Users/nickwarren/AndroidStudioProjects/HistoricSJ/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-design-25.1.1_3d7f3415043b8ec4b0d817a4e9393b2312737afe/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/nickwarren/AndroidStudioProjects/HistoricSJ/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.1.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="02741d05d4b697fba5e279e9881aaa1da0ca7c7f">
-        <dex dex="/Users/nickwarren/AndroidStudioProjects/HistoricSJ/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-compat-25.1.1_75f7e6615fb85f0550959fa03b15019832bbef51/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/nickwarren/AndroidStudioProjects/HistoricSJ/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.1.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="7bde4c34162092e0a77e7f12dc85ed77c484cf5c">
-        <dex dex="/Users/nickwarren/AndroidStudioProjects/HistoricSJ/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-media-compat-25.1.1_1c32f944fa8e966fb0e395b27efb637869dbcc71/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/nickwarren/AndroidStudioProjects/HistoricSJ/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.1.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="3e04ac8ca644ea7baddf6fdcf72e15c79e9df94a">
-        <dex dex="/Users/nickwarren/AndroidStudioProjects/HistoricSJ/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-ui-25.1.1_5ed0f01c5da0e7c3824ac17ce444c0e197d081be/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/nickwarren/AndroidStudioProjects/HistoricSJ/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/9.8.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="122ec9237acd8a57d974b9d529987f1ee6ca5aea">
-        <dex dex="/Users/nickwarren/AndroidStudioProjects/HistoricSJ/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-maps-9.8.0_4fc281089fa0c71cab39b061b48acd411bf1d84d/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/Users/nickwarren/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/25.1.1/support-annotations-25.1.1.jar"
         jumboMode="true"
         optimize="true"
@@ -115,62 +16,161 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="e92f4287b254ffccb35cb3bfcce44adc4ce2e33d">
-        <dex dex="/Users/nickwarren/AndroidStudioProjects/HistoricSJ/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_3011416cc79db563eedf14bbc39a81849b3b253b/classes.dex" />
+        sha1="c82741bc129dd5f99f11a4ab8666ae24262053b6">
+        <dex dex="/Users/nickwarren/AndroidStudioProjects/HistoricSJ/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_3011416cc79db563eedf14bbc39a81849b3b253b/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/Users/nickwarren/AndroidStudioProjects/HistoricSJ/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.8.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="9f6d236bac26d02b410e4ee186ba517ace5ee661">
-        <dex dex="/Users/nickwarren/AndroidStudioProjects/HistoricSJ/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-basement-9.8.0_2e919c566333b67284ed8f6fa301353483ed3485/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/nickwarren/AndroidStudioProjects/HistoricSJ/app/build/intermediates/exploded-aar/com.android.support/transition/25.1.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="15b049fedbd8e3926bf99d9e45dfc9b2a1043bb9">
-        <dex dex="/Users/nickwarren/AndroidStudioProjects/HistoricSJ/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-transition-25.1.1_caa9c10bcd0da9581922cc829ee537a87823b733/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/nickwarren/AndroidStudioProjects/HistoricSJ/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.1.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="e2719c102dca3a7a5b02ce07f769362da6ddb4ab">
-        <dex dex="/Users/nickwarren/AndroidStudioProjects/HistoricSJ/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-fragment-25.1.1_6563d56e3768033096f3346f024f10c65360300c/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/nickwarren/AndroidStudioProjects/HistoricSJ/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.8.0/jars/classes.jar"
+        jar="/Users/nickwarren/.android/build-cache/f975de6b3c23728a280f1bf73caa273e51510251/output/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="7e92aadd0697922316d1395c1887a23aebec640a">
-        <dex dex="/Users/nickwarren/AndroidStudioProjects/HistoricSJ/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-base-9.8.0_359b5a34117199bf880e814705423175f2c307a4/classes.dex" />
+        <dex dex="/Users/nickwarren/AndroidStudioProjects/HistoricSJ/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_66028e209627e92b9ad3a7a3bcab06f5d5179edc/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/Users/nickwarren/AndroidStudioProjects/HistoricSJ/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.1.1/jars/classes.jar"
+        jar="/Users/nickwarren/.android/build-cache/caef866e128a6333374cca41c9f84365b63ee7f9/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0fb891e8f0cfba0513043a7bb357513d229ca2cd">
+        <dex dex="/Users/nickwarren/AndroidStudioProjects/HistoricSJ/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_61d05fabea4d8194660584a74f955a6a0902547b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/nickwarren/.android/build-cache/c5a9bc28ae07ad822d36dfc05fb32fd7f4ce2641/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="122ec9237acd8a57d974b9d529987f1ee6ca5aea">
+        <dex dex="/Users/nickwarren/AndroidStudioProjects/HistoricSJ/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_0cd6d16e1162497a653835d7c172c0072b77fcc9/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/nickwarren/.android/build-cache/9b7b3e89a26243ff1926358830d2d7d72da0afd0/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/Users/nickwarren/AndroidStudioProjects/HistoricSJ/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_37386cc970d9c56aeffd9f9c66c5668c1e486b9f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/nickwarren/.gradle/caches/modules-2/files-2.1/org.greenrobot/eventbus/3.0.0/ddd99896e9569eaababbe81b35d80e1b91c4ad85/eventbus-3.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ddd99896e9569eaababbe81b35d80e1b91c4ad85">
+        <dex dex="/Users/nickwarren/AndroidStudioProjects/HistoricSJ/app/build/intermediates/transforms/dex/debug/folders/1000/10/eventbus-3.0.0_c256fd460b92e75f4f03f73a4e1a5050877695c7/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/nickwarren/.android/build-cache/ae6d36751bfa1af306845a3af2f7a81df3216998/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ecb496cc08dd52551fc5ec6db3bc0632e95a89bb">
+        <dex dex="/Users/nickwarren/AndroidStudioProjects/HistoricSJ/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_db172daeaeda185379092129641c1eca69375a5d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/nickwarren/.android/build-cache/921cb290cae46654ded7b3715905fbc9362881b1/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e3234cd25e23069abd48ecd2117bc0e8011bf45a">
+        <dex dex="/Users/nickwarren/AndroidStudioProjects/HistoricSJ/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_ac2e1f25925336bd8a0c3b7c62ce3b23d567b36b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/nickwarren/.android/build-cache/17b6796ac8a7a3619f3f96ab82bb83f8eb50ebce/output/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="c03bf57f358aa10d253f21989e93bcf6014b3b17">
-        <dex dex="/Users/nickwarren/AndroidStudioProjects/HistoricSJ/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-25.1.1_df982f675de7f9bde197c02352d5881fc0cfaada/classes.dex" />
+        <dex dex="/Users/nickwarren/AndroidStudioProjects/HistoricSJ/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_21829a602bcf4480f122632aa943e41cabcbe703/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/Users/nickwarren/AndroidStudioProjects/HistoricSJ/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/9.8.0/jars/classes.jar"
+        jar="/Users/nickwarren/.android/build-cache/2fd44ea07949e67d576cd37923a2a9fd6b640be6/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0d191c1a09e4892d059e5ce749e4ad4e08129e35">
+        <dex dex="/Users/nickwarren/AndroidStudioProjects/HistoricSJ/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_f522e08784755a0a5d0e755a5bc7e2b289db9093/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/nickwarren/.android/build-cache/443ea7bbe2d820469dc42ec029a16fd2ae5297d1/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="04bbbddf868aa02dd33f9e90d8f5d908c360f638">
+        <dex dex="/Users/nickwarren/AndroidStudioProjects/HistoricSJ/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_0dfc675d59485f6c2b3786982345854fc8ecf939/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/nickwarren/.android/build-cache/e0e090b2ef67f9bf750fffce1ce77f14d7a928d0/output/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="bf2e1838e4428616c1aa26edf43de72b5b99bf84">
-        <dex dex="/Users/nickwarren/AndroidStudioProjects/HistoricSJ/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-tasks-9.8.0_8799f0eaa125984b6f146f807da2903fa0a0b79a/classes.dex" />
+        <dex dex="/Users/nickwarren/AndroidStudioProjects/HistoricSJ/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_e72cb3f2df9f72c0d40eccec460758bc8eaab6c3/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/nickwarren/.android/build-cache/6305ec218d105deece41f562ce914dbfae0f7684/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="3e04ac8ca644ea7baddf6fdcf72e15c79e9df94a">
+        <dex dex="/Users/nickwarren/AndroidStudioProjects/HistoricSJ/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_e1a23b6388028839bc1713c32a1de3fd963f9b4d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/nickwarren/.android/build-cache/7c476e84a9793005c0b890471e1f93507fad625b/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="15b049fedbd8e3926bf99d9e45dfc9b2a1043bb9">
+        <dex dex="/Users/nickwarren/AndroidStudioProjects/HistoricSJ/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_505b933b84b0445119fe7868404eda8510bf358c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/nickwarren/.android/build-cache/e1bf9d64f182b3809fef2454544317692a2153b9/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="cd7951e04cfb9a8bf008d544a478d9a8d8192d38">
+        <dex dex="/Users/nickwarren/AndroidStudioProjects/HistoricSJ/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_90f6cf1359e22c7d2843da5c3b654fb295c0e3ec/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/nickwarren/.android/build-cache/bc97c3c831227ab433eb410bcc7f20d4677af8b0/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="7bde4c34162092e0a77e7f12dc85ed77c484cf5c">
+        <dex dex="/Users/nickwarren/AndroidStudioProjects/HistoricSJ/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_a55b5a2732b9158dfa611331626b6453c449ae28/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/nickwarren/.android/build-cache/6368cc5893b42cfccf4b68240920078bbe6849de/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c9649557905bf7a80fca9e0d54cbcb7662627860">
+        <dex dex="/Users/nickwarren/AndroidStudioProjects/HistoricSJ/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_ff488e4249c5dac52f1e72b2de8dc3ae85ec6af0/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/nickwarren/.android/build-cache/6dc026fc1e1774d7f5fe66b3838fa896041ad916/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="02741d05d4b697fba5e279e9881aaa1da0ca7c7f">
+        <dex dex="/Users/nickwarren/AndroidStudioProjects/HistoricSJ/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_efa6b1bfb2e7b6c501c14230aef6e1d005166f16/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -178,26 +178,35 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="3b8fd4b2c5f91dda384ab0518ed9bcaf40658c5a">
-        <dex dex="/Users/nickwarren/AndroidStudioProjects/HistoricSJ/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_280df7bb9b2b1f7644e111ba8c07e4817831e052/classes.dex" />
+        sha1="4783af4209fcea0d34d78329fb3bb1416ed741df">
+        <dex dex="/Users/nickwarren/AndroidStudioProjects/HistoricSJ/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_280df7bb9b2b1f7644e111ba8c07e4817831e052/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/Users/nickwarren/AndroidStudioProjects/HistoricSJ/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appindexing/9.8.0/jars/classes.jar"
+        jar="/Users/nickwarren/.android/build-cache/9b7869798714d7e134ba2a1bad5a6d1b7e4b72c7/output/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="e3234cd25e23069abd48ecd2117bc0e8011bf45a">
-        <dex dex="/Users/nickwarren/AndroidStudioProjects/HistoricSJ/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-appindexing-9.8.0_4aacb3e26605a10c79003163b42c66e146e27e5b/classes.dex" />
+        sha1="e2719c102dca3a7a5b02ce07f769362da6ddb4ab">
+        <dex dex="/Users/nickwarren/AndroidStudioProjects/HistoricSJ/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_d8e93e04053ac2fef157cd630a5d52118ce24406/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/Users/nickwarren/AndroidStudioProjects/HistoricSJ/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.1.1/jars/classes.jar"
+        jar="/Users/nickwarren/.android/build-cache/52980db77a1a852c6c43daba7df1964972eb599e/output/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
-        <dex dex="/Users/nickwarren/AndroidStudioProjects/HistoricSJ/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-25.1.1_1909f209b849fb9cdddbdef9d7902ffa06efe189/classes.dex" />
+        sha1="9f6d236bac26d02b410e4ee186ba517ace5ee661">
+        <dex dex="/Users/nickwarren/AndroidStudioProjects/HistoricSJ/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_27d2816fe5ee70a56de9023bdba820e53120947a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/nickwarren/.android/build-cache/400904a8ff52aacffd08f01d453de0b3501a48a0/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c61641e333fa88da21758bab8cc28ee16604b05f">
+        <dex dex="/Users/nickwarren/AndroidStudioProjects/HistoricSJ/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_f7126acb22d862394f233967522644a65195e260/classes.dex" />
     </item>
 
 </items>
