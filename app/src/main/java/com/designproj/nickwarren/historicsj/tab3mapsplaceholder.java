@@ -1,15 +1,14 @@
 package com.designproj.nickwarren.historicsj;
 
 import android.os.Bundle;
-import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
+import android.util.Log;
+import android.view.InflateException;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
-import com.google.android.gms.maps.MapFragment;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
@@ -25,26 +24,70 @@ import org.greenrobot.eventbus.ThreadMode;
  */
 
 public class tab3mapsplaceholder extends Fragment implements OnMapReadyCallback {
+    private View rootView;
+    private SupportMapFragment mapFragment = new SupportMapFragment();
+    String TAG = "Log";
 
 
-
-    private GoogleMap mMap;
-
-    public static tab3mapsplaceholder newInstance() {
-        tab3mapsplaceholder fragment = new tab3mapsplaceholder();
-        return fragment; 
+    @Override
+    public void onDetach() {
+        super.onDetach();
     }
 
-    @Nullable
+    @Override
+    public void onCreate(Bundle savedInstanceState) { super.onCreate(savedInstanceState);
+    }
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_gmaps, null, false);
+        try {
+            rootView = inflater.inflate(R.layout.fragment_gmaps, null, false);
 
-        SupportMapFragment mapFragment = (SupportMapFragment) this.getChildFragmentManager()
-                .findFragmentById(R.id.map);
-        mapFragment.getMapAsync(this);
+            mapFragment = (SupportMapFragment) this.getChildFragmentManager().findFragmentById(R.id.map);
+            mapFragment.onCreate(savedInstanceState);
+            mapFragment.getMapAsync(this);
+        }
+        catch(InflateException e){
+            Log.e(TAG, "Inflate exception");
+        }
+        return rootView;
+    }
 
-        return view;
+    @Override
+    public void onPause() {
+        super.onPause();
+        mapFragment.onPause();
+    }
+
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+        mapFragment.onDestroy();
+    }
+
+    @Override
+    public void onSaveInstanceState(Bundle outState)
+    {
+        super.onSaveInstanceState(outState);
+        mapFragment.onSaveInstanceState(outState);
+    }
+
+    @Override
+    public void onLowMemory()
+    {
+        super.onLowMemory();
+        mapFragment.onLowMemory();
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        mapFragment.onResume();
+    }
+
+    @Override
+    public void onDestroyView() {
+        super.onDestroyView();
     }
 
     @Override
@@ -53,6 +96,7 @@ public class tab3mapsplaceholder extends Fragment implements OnMapReadyCallback 
         googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(marker, 13));        //center camera to marker
         googleMap.addMarker(new MarkerOptions().title("Location").position(marker));        //add pin and location name
     }
+
 
     // This method will be called when a com.designproj.nickwarren.historicsj.MessageEvent is posted (in the UI thread for Toast)
     @Subscribe(threadMode = ThreadMode.MAIN)
