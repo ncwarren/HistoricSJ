@@ -27,7 +27,8 @@ public class tab3mapsplaceholder extends Fragment implements OnMapReadyCallback 
     private View rootView;
     private SupportMapFragment mapFragment = new SupportMapFragment();
     String TAG = "Log";
-
+    LatLng marker;
+    GoogleMap mapObject;
 
     @Override
     public void onDetach() {
@@ -40,6 +41,7 @@ public class tab3mapsplaceholder extends Fragment implements OnMapReadyCallback 
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+
         try {
             rootView = inflater.inflate(R.layout.fragment_gmaps, null, false);
 
@@ -92,22 +94,24 @@ public class tab3mapsplaceholder extends Fragment implements OnMapReadyCallback 
 
     @Override
     public void onMapReady(GoogleMap googleMap) {
-        LatLng marker = new LatLng(47.5744, -52.735);       //creating coordinate object
-        googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(marker, 13));        //center camera to marker
-        googleMap.addMarker(new MarkerOptions().title("Location").position(marker));        //add pin and location name
+              //add pin and location name
+        mapObject = googleMap;
     }
 
 
     // This method will be called when a com.designproj.nickwarren.historicsj.MessageEvent is posted (in the UI thread for Toast)
     @Subscribe(threadMode = ThreadMode.MAIN)
     public void onMessageEvent(PhotoObject event) {
-        LatLng marker = new LatLng(48.7, -52.8);
+        marker = new LatLng (47.5823, 52.6778); //creating coordinate object
+        mapObject.moveCamera(CameraUpdateFactory.newLatLngZoom(marker, 13));        //center camera to marker
+        mapObject.addMarker(new MarkerOptions().title("Quidi Vidi Village").position(marker));
     }
 
     @Override
     public void onStart() {
         super.onStart();
-        EventBus.getDefault().register(this);
+        if (!EventBus.getDefault().isRegistered(this))
+            EventBus.getDefault().register(this);
     }
 
 }
