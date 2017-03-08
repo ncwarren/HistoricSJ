@@ -54,6 +54,7 @@ public class tab3mapsplaceholder extends Fragment implements OnMapReadyCallback 
         super.onPause();
         mapFragment.onPause();
     }
+
     @Override
     public void onDestroy() {
         super.onDestroy();
@@ -66,17 +67,20 @@ public class tab3mapsplaceholder extends Fragment implements OnMapReadyCallback 
         super.onSaveInstanceState(outState);
         mapFragment.onSaveInstanceState(outState);
     }
+
     @Override
     public void onLowMemory()
     {
         super.onLowMemory();
         mapFragment.onLowMemory();
     }
+
     @Override
     public void onResume() {
         super.onResume();
         mapFragment.onResume();
     }
+
     @Override
     public void onDestroyView() {
         super.onDestroyView();
