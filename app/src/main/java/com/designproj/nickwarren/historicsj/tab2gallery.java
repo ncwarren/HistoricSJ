@@ -110,7 +110,7 @@ public class tab2gallery extends Fragment //implements MyAdapter.AdapterCallback
     };
 
     private final Integer image_ids[] = {
-            R.drawable.testimage,
+            R.drawable.photo1,
             R.drawable.testimage,
             R.drawable.testimage,
             R.drawable.testimage,
