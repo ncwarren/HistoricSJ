@@ -7,7 +7,7 @@ package com.designproj.nickwarren.historicsj;
 public class PhotoObject {
     public String caption;
     public String date;
-    public String idname;
+    public int idname;
     public String source;
 
     public float latitude;
@@ -15,7 +15,7 @@ public class PhotoObject {
 
 
 
-    public PhotoObject(String idname, String caption, String date, String source, float latitude, float longitude){
+    public PhotoObject(int idname, String caption, String date, String source, float latitude, float longitude){
         this.caption = caption;
         this.date = date;
         this.idname = idname;

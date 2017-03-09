@@ -94,13 +94,15 @@ public class tab2gallery extends Fragment //implements MyAdapter.AdapterCallback
     }
 
     private final String image_titles[] = {
-            "Img1",
-            "Img2",
-            "Img3",
-            "Img4",
-            "Img5",
-            "Img6",
-            
+            "Img1 details",
+            "Img2 details",
+            "Img3 details",
+            "Img4 details",
+            "Img5 details",
+            "Img6 details",
+            "Img5 details",
+            "Img6 details",
+
     };
 
     private final Integer image_ids[] = {
@@ -110,6 +112,7 @@ public class tab2gallery extends Fragment //implements MyAdapter.AdapterCallback
             R.drawable.photo4,
             R.drawable.photo5,
             R.drawable.photo6,
-
+            R.drawable.photo7,
+            R.drawable.photo8,
     };
 }

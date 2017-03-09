@@ -71,8 +71,11 @@ public class tab1learnmore extends Fragment {
     // This method will be called when a com.designproj.nickwarren.historicsj.MessageEvent is posted (in the UI thread for Toast)
     @Subscribe(threadMode = ThreadMode.MAIN)
     public void onMessageEvent(PhotoObject event) {
+
         t.setText(event.caption);
+        im.setImageResource(event.idname);
     }
+
 
     @Override
     public void onStart() {
