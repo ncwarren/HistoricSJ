@@ -59,7 +59,7 @@ public class tab1learnmore extends Fragment {
         }
         infoDB.recycle();
 
-        t.setText(infoDB_stringified[0][1]);
+        t.setText("All images used under Creative Commons Non-Commercial No Derivatives v2.5 license");
 
         this.im = (ImageView) myInflatedView.findViewById(R.id.imageView);
         this.im.setImageResource(R.drawable.testimage);

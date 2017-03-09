@@ -100,13 +100,7 @@ public class tab2gallery extends Fragment //implements MyAdapter.AdapterCallback
             "Img4",
             "Img5",
             "Img6",
-            "Img7",
-            "Img8",
-            "Img9",
-            "Img10",
-            "Img11",
-            "Img12",
-            "Img13",
+            
     };
 
     private final Integer image_ids[] = {
@@ -114,14 +108,8 @@ public class tab2gallery extends Fragment //implements MyAdapter.AdapterCallback
             R.drawable.photo2,
             R.drawable.photo3,
             R.drawable.photo4,
-            R.drawable.testimage,
-            R.drawable.testimage,
-            R.drawable.testimage,
-            R.drawable.testimage,
-            R.drawable.testimage,
-            R.drawable.testimage,
-            R.drawable.testimage,
-            R.drawable.testimage,
-            R.drawable.testimage,
+            R.drawable.photo5,
+            R.drawable.photo6,
+
     };
 }
