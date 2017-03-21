@@ -34,7 +34,8 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
 
     @Override
     public void onBindViewHolder(MyAdapter.ViewHolder viewHolder, final int i) {
-        viewHolder.title.setText(galleryList.get(i).getImage_title());
+        //viewHolder.title.setText(galleryList.get(i).getCaption());
+        viewHolder.title.setText("");
         viewHolder.img.setScaleType(ImageView.ScaleType.CENTER_CROP);
         viewHolder.img.setImageResource((galleryList.get(i).getImage_ID()));
 
@@ -42,7 +43,12 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
 
             @Override
             public void onClick(View v) {
-                EventBus.getDefault().post(new PhotoObject(galleryList.get(i).getImage_ID(), galleryList.get(i).getImage_title(), "1892", "MUN", 0, 0));
+                EventBus.getDefault().post(new PhotoObject(galleryList.get(i).getImage_ID(),
+                                                            galleryList.get(i).getCaption(),
+                                                            galleryList.get(i).getDate(),
+                                                            galleryList.get(i).getSource(),
+                                                            galleryList.get(i).getLatitude(),
+                                                            galleryList.get(i).getLongitude()));
             }
         });
     }

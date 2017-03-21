@@ -3,39 +3,12 @@
 
     <item
         is-multidex="false"
-        jar="/Users/nickwarren/.android/build-cache/2fd44ea07949e67d576cd37923a2a9fd6b640be6/output/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="0d191c1a09e4892d059e5ce749e4ad4e08129e35">
-        <dex dex="/Users/nickwarren/AndroidStudioProjects/HistoricSJ/app/build/intermediates/pre-dexed/debug/classes_f522e08784755a0a5d0e755a5bc7e2b289db9093.jar" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/nickwarren/AndroidStudioProjects/HistoricSJ/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="c82741bc129dd5f99f11a4ab8666ae24262053b6">
-        <dex dex="/Users/nickwarren/AndroidStudioProjects/HistoricSJ/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_3011416cc79db563eedf14bbc39a81849b3b253b/classes.dex" />
-    </item>
-    <item
-        is-multidex="false"
         jar="/Users/nickwarren/.android/build-cache/ae6d36751bfa1af306845a3af2f7a81df3216998/output/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.2"
         sha1="ecb496cc08dd52551fc5ec6db3bc0632e95a89bb">
         <dex dex="/Users/nickwarren/AndroidStudioProjects/HistoricSJ/app/build/intermediates/pre-dexed/debug/classes_db172daeaeda185379092129641c1eca69375a5d.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/nickwarren/.android/build-cache/17b6796ac8a7a3619f3f96ab82bb83f8eb50ebce/output/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="c03bf57f358aa10d253f21989e93bcf6014b3b17">
-        <dex dex="/Users/nickwarren/AndroidStudioProjects/HistoricSJ/app/build/intermediates/pre-dexed/debug/classes_21829a602bcf4480f122632aa943e41cabcbe703.jar" />
     </item>
     <item
         is-multidex="false"
@@ -63,15 +36,6 @@
         revision="25.0.2"
         sha1="15b049fedbd8e3926bf99d9e45dfc9b2a1043bb9">
         <dex dex="/Users/nickwarren/AndroidStudioProjects/HistoricSJ/app/build/intermediates/pre-dexed/debug/classes_505b933b84b0445119fe7868404eda8510bf358c.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/nickwarren/.android/build-cache/443ea7bbe2d820469dc42ec029a16fd2ae5297d1/output/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="04bbbddf868aa02dd33f9e90d8f5d908c360f638">
-        <dex dex="/Users/nickwarren/AndroidStudioProjects/HistoricSJ/app/build/intermediates/pre-dexed/debug/classes_0dfc675d59485f6c2b3786982345854fc8ecf939.jar" />
     </item>
     <item
         is-multidex="false"
@@ -117,6 +81,51 @@
         revision="25.0.2"
         sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
         <dex dex="/Users/nickwarren/AndroidStudioProjects/HistoricSJ/app/build/intermediates/pre-dexed/debug/classes_37386cc970d9c56aeffd9f9c66c5668c1e486b9f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/nickwarren/.android/build-cache/9b7869798714d7e134ba2a1bad5a6d1b7e4b72c7/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e2719c102dca3a7a5b02ce07f769362da6ddb4ab">
+        <dex dex="/Users/nickwarren/AndroidStudioProjects/HistoricSJ/app/build/intermediates/pre-dexed/debug/classes_d8e93e04053ac2fef157cd630a5d52118ce24406.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/nickwarren/.android/build-cache/2fd44ea07949e67d576cd37923a2a9fd6b640be6/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0d191c1a09e4892d059e5ce749e4ad4e08129e35">
+        <dex dex="/Users/nickwarren/AndroidStudioProjects/HistoricSJ/app/build/intermediates/pre-dexed/debug/classes_f522e08784755a0a5d0e755a5bc7e2b289db9093.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/nickwarren/AndroidStudioProjects/HistoricSJ/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c82741bc129dd5f99f11a4ab8666ae24262053b6">
+        <dex dex="/Users/nickwarren/AndroidStudioProjects/HistoricSJ/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_3011416cc79db563eedf14bbc39a81849b3b253b/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/nickwarren/.android/build-cache/17b6796ac8a7a3619f3f96ab82bb83f8eb50ebce/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c03bf57f358aa10d253f21989e93bcf6014b3b17">
+        <dex dex="/Users/nickwarren/AndroidStudioProjects/HistoricSJ/app/build/intermediates/pre-dexed/debug/classes_21829a602bcf4480f122632aa943e41cabcbe703.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/nickwarren/.android/build-cache/443ea7bbe2d820469dc42ec029a16fd2ae5297d1/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="04bbbddf868aa02dd33f9e90d8f5d908c360f638">
+        <dex dex="/Users/nickwarren/AndroidStudioProjects/HistoricSJ/app/build/intermediates/pre-dexed/debug/classes_0dfc675d59485f6c2b3786982345854fc8ecf939.jar" />
     </item>
     <item
         is-multidex="false"
@@ -189,15 +198,6 @@
         revision="25.0.2"
         sha1="b59b6ee8d6ecc03e672d253800430343493a6ed8">
         <dex dex="/Users/nickwarren/AndroidStudioProjects/HistoricSJ/app/build/intermediates/pre-dexed/debug/support-annotations-25.1.1_f7c0119f599540b5e3f320503b9e671fe3218bef.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/nickwarren/.android/build-cache/9b7869798714d7e134ba2a1bad5a6d1b7e4b72c7/output/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="e2719c102dca3a7a5b02ce07f769362da6ddb4ab">
-        <dex dex="/Users/nickwarren/AndroidStudioProjects/HistoricSJ/app/build/intermediates/pre-dexed/debug/classes_d8e93e04053ac2fef157cd630a5d52118ce24406.jar" />
     </item>
     <item
         is-multidex="false"

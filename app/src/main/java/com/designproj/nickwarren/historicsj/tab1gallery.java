@@ -4,8 +4,10 @@ import android.app.Activity;
 import android.app.ListFragment;
 import android.content.res.Resources;
 import android.content.res.TypedArray;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.annotation.StyleableRes;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -36,7 +38,7 @@ import java.util.ArrayList;
  * Recycler view: http://www.androidauthority.com/how-to-build-an-image-gallery-app-718976/
  */
 
-public class tab2gallery extends Fragment //implements MyAdapter.AdapterCallback
+public class tab1gallery extends Fragment //implements MyAdapter.AdapterCallback
  {
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -81,38 +83,42 @@ public class tab2gallery extends Fragment //implements MyAdapter.AdapterCallback
 
     }
 
-    private ArrayList<CreateList> prepareData(){
-
+    private ArrayList<CreateList> prepareData(){  //http://stackoverflow.com/questions/4326037/android-resource-array-of-arrays
         ArrayList<CreateList> theimage = new ArrayList<>();
-        for(int i = 0; i< image_titles.length; i++){
-            CreateList createList = new CreateList();
-            createList.setImage_title(image_titles[i]);
-            createList.setImage_ID(image_ids[i]);
-            theimage.add(createList);
+        @StyleableRes int one = 1;
+
+        Resources resources = getResources();
+        TypedArray photos = resources.obtainTypedArray(R.array.historic_photo_info);
+
+        String[][] array =  new String[photos.length()][];
+
+        for (int i = 0; i < photos.length(); ++i) {
+            int resId = photos.getResourceId(i, 0);
+            if (resId > 0) {
+                CreateList createList = new CreateList();
+
+                TypedArray photoobj = resources.obtainTypedArray(resId); //2nd layer array of Drawable(index 1), string array(index 0)
+                int stringsID = photoobj.getResourceId(0, 0);
+                int drawable = photoobj.getResourceId(one, 0);
+
+                if (stringsID > 0){
+                    array[i] = resources.getStringArray(stringsID);
+                    createList.setCaption(array[i][0]);
+                    createList.setDate(array[i][1]);
+                    createList.setSource(array[i][2]);
+                    createList.setLatitude(Double.parseDouble(array[i][3]));
+                    createList.setLongitude(Double.parseDouble(array[i][4]));
+                }
+                createList.setImage_ID(drawable);
+                theimage.add(createList);
+            }
+
+
         }
+        photos.recycle();
+
         return theimage;
+
     }
 
-    private final String image_titles[] = {
-            "Img1 details",
-            "Img2 details",
-            "Img3 details",
-            "Img4 details",
-            "Img5 details",
-            "Img6 details",
-            "Img5 details",
-            "Img6 details",
-
-    };
-
-    private final Integer image_ids[] = {
-            R.drawable.photo1,
-            R.drawable.photo2,
-            R.drawable.photo3,
-            R.drawable.photo4,
-            R.drawable.photo5,
-            R.drawable.photo6,
-            R.drawable.photo7,
-            R.drawable.photo8,
-    };
 }

@@ -1,5 +1,7 @@
 package com.designproj.nickwarren.historicsj;
 
+import android.graphics.drawable.Drawable;
+
 import java.util.ArrayList;
 
 /**
@@ -7,15 +9,50 @@ import java.util.ArrayList;
  */
 
 public class CreateList {
-    private String image_title;
+
     private Integer image_id;
 
-    public String getImage_title() {
-        return image_title;
+    private String caption;
+    private String date;
+    private String source;
+
+    private double latitude = 47.5780161;
+    private double longitude = -52.7354376;
+
+    public CreateList() {
+
     }
 
-    public void setImage_title(String android_version_name) {
-        this.image_title = android_version_name;
+    public double getLongitude() { return longitude; }
+
+    public void setLongitude(double longitude) {this.longitude = longitude;}
+
+    public double getLatitude() {return latitude;}
+
+    public void setLatitude(double latitude) {this.latitude = latitude;}
+
+    public String getDate() {
+        return date;
+    }
+
+    public void setDate(String date) {
+        this.date = date;
+    }
+
+    public String getCaption() {
+        return caption;
+    }
+
+    public void setCaption(String caption) {
+        this.caption = caption;
+    }
+
+    public String getSource() {
+        return source;
+    }
+
+    public void setSource(String source) {
+        this.source = source;
     }
 
     public Integer getImage_ID() {

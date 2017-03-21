@@ -23,7 +23,7 @@ import org.greenrobot.eventbus.ThreadMode;
  * Created by nickwarren on 2017-03-02.
  */
 
-public class tab3mapsplaceholder extends Fragment implements OnMapReadyCallback {
+public class tab3maps extends Fragment implements OnMapReadyCallback {
     private View rootView;
     private SupportMapFragment mapFragment = new SupportMapFragment();
     String TAG = "Log";
@@ -102,7 +102,7 @@ public class tab3mapsplaceholder extends Fragment implements OnMapReadyCallback 
     // This method will be called when a com.designproj.nickwarren.historicsj.MessageEvent is posted (in the UI thread for Toast)
     @Subscribe(threadMode = ThreadMode.MAIN)
     public void onMessageEvent(PhotoObject event) {
-        marker = new LatLng (47.5823, 52.6778); //creating coordinate object
+        marker = new LatLng (event.latitude, event.longitude); //creating coordinate object
         mapObject.moveCamera(CameraUpdateFactory.newLatLngZoom(marker, 13));        //center camera to marker
         mapObject.addMarker(new MarkerOptions().title("Quidi Vidi Village").position(marker));
     }

@@ -31,7 +31,7 @@ import javax.xml.parsers.*;
 import java.io.*;
 
 
-public class tab1learnmore extends Fragment {
+public class tab2info extends Fragment {
 
     TextView t;
     ImageView im;

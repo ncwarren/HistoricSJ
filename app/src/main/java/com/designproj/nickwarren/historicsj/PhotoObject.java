@@ -10,12 +10,12 @@ public class PhotoObject {
     public int idname;
     public String source;
 
-    public float latitude;
-    public float longitude;
+    public double latitude;
+    public double longitude;
 
 
 
-    public PhotoObject(int idname, String caption, String date, String source, float latitude, float longitude){
+    public PhotoObject(int idname, String caption, String date, String source, double latitude, double longitude){
         this.caption = caption;
         this.date = date;
         this.idname = idname;

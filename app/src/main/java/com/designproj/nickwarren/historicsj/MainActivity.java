@@ -1,6 +1,5 @@
 package com.designproj.nickwarren.historicsj;
 
-import android.content.Context;
 import android.net.Uri;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.FragmentStatePagerAdapter;
@@ -15,13 +14,12 @@ import android.support.v4.view.ViewPager;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.TextView;
-import android.widget.Toast;
 
 import com.google.android.gms.appindexing.Action;
 import com.google.android.gms.appindexing.AppIndex;
 import com.google.android.gms.appindexing.Thing;
 import com.google.android.gms.common.api.GoogleApiClient;
+import com.google.android.gms.location.LocationServices;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -67,6 +65,7 @@ public class MainActivity extends AppCompatActivity {
         // ATTENTION: This was auto-generated to implement the App Indexing API.
         // See https://g.co/AppIndexing/AndroidStudio for more information.
         client = new GoogleApiClient.Builder(this).addApi(AppIndex.API).build();
+
     }
 
     //testaddition
@@ -146,13 +145,13 @@ public class MainActivity extends AppCompatActivity {
             //returning the current tabs
             switch (position) {
                 case 0:
-                    tab1learnmore tab1 = new tab1learnmore();
-                    return tab1;
-                case 1:
-                    tab2gallery tab2 =  new tab2gallery();
+                    tab1gallery tab2 =  new tab1gallery();
                     return tab2;
+                case 1:
+                    tab2info tab1 = new tab2info();
+                    return tab1;
                 case 2:
-                    tab3mapsplaceholder tab3 = new tab3mapsplaceholder();
+                    tab3maps tab3 = new tab3maps();
                     return tab3;
                 default:
                     return null;
@@ -169,9 +168,9 @@ public class MainActivity extends AppCompatActivity {
         public CharSequence getPageTitle(int position) {
             switch (position) {
                 case 0:
-                    return "INFO";
-                case 1:
                     return "GALLERY";
+                case 1:
+                    return "INFO";
                 case 2:
                     return "BROWSE";
             }
