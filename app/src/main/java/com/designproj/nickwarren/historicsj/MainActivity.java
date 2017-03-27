@@ -145,13 +145,13 @@ public class MainActivity extends AppCompatActivity {
             //returning the current tabs
             switch (position) {
                 case 0:
-                    tab1gallery tab2 =  new tab1gallery();
-                    return tab2;
-                case 1:
-                    tab2info tab1 = new tab2info();
+                    tab3maps tab1 = new tab3maps();
                     return tab1;
+                case 1:
+                    tab2info tab2 = new tab2info();
+                    return tab2;
                 case 2:
-                    tab3maps tab3 = new tab3maps();
+                    tab1gallery tab3 =  new tab1gallery();
                     return tab3;
                 default:
                     return null;
@@ -168,11 +168,11 @@ public class MainActivity extends AppCompatActivity {
         public CharSequence getPageTitle(int position) {
             switch (position) {
                 case 0:
-                    return "GALLERY";
+                    return "MAP";
                 case 1:
                     return "INFO";
                 case 2:
-                    return "BROWSE";
+                    return "GALLERY";
             }
             return null;
         }
