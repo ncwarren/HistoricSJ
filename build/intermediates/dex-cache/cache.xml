@@ -169,7 +169,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="31c4966f56ce4f3b1dd7223d3d1e8de48799ccc1">
+        sha1="8870c01917dbe5034ced46614027cf8beb203ab5">
         <dex dex="/Users/nickwarren/AndroidStudioProjects/HistoricSJ/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_280df7bb9b2b1f7644e111ba8c07e4817831e052/classes.dex" />
     </item>
     <item
